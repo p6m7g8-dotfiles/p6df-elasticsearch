@@ -50,7 +50,10 @@ p6df::modules::elasticsearch::prompt::line() {
 ######################################################################
 #<
 #
-# Function: str str = p6_elasticsearch_prompt_info()
+# Function: str str = p6_elasticsearch_prompt_info(str)
+#
+#  Args:
+#	str -
 #
 #  Returns:
 #	str - str
@@ -58,8 +61,7 @@ p6df::modules::elasticsearch::prompt::line() {
 #>
 ######################################################################
 p6_elasticsearch_prompt_info() {
-
-  local str="elasticsearch:\t  "
+  local str="es:\t\t  "
 
   p6_return_str "$str"
 }
