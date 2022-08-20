@@ -45,10 +45,7 @@
 #### p6df-elasticsearch/init.zsh:
 
 - p6df::modules::elasticsearch::deps()
-- p6df::modules::elasticsearch::init()
-- p6df::modules::elasticsearch::prompt::init()
-- p6df::modules::elasticsearch::prompt::line()
-- str str = p6_elasticsearch_prompt_info(str)
+- str str = p6df::modules::elasticsearch::prompt::line()
 
 
 

@@ -15,55 +15,15 @@ p6df::modules::elasticsearch::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::elasticsearch::init()
-#
-#>
-######################################################################
-p6df::modules::elasticsearch::init() {
-
-  p6df::modules::elasticsearch::prompt::init
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::elasticsearch::prompt::init()
-#
-#>
-######################################################################
-p6df::modules::elasticsearch::prompt::init() {
-
-  p6df::core::prompt::line::add "p6df::modules::elasticsearch::prompt::line"
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::elasticsearch::prompt::line()
-#
-#>
-######################################################################
-p6df::modules::elasticsearch::prompt::line() {
-
-  p6_elasticsearch_prompt_info
-}
-
-######################################################################
-#<
-#
-# Function: str str = p6_elasticsearch_prompt_info(str)
-#
-#  Args:
-#	str -
+# Function: str str = p6df::modules::elasticsearch::prompt::line()
 #
 #  Returns:
 #	str - str
 #
 #>
 ######################################################################
-p6_elasticsearch_prompt_info() {
+p6df::modules::elasticsearch::prompt::line() {
+
   local str="es:\t\t  "
 
   p6_return_str "$str"
